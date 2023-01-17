@@ -1,0 +1,62 @@
+/**
+ ******************  Script Configuration ******************
+ */
+buildscript {
+  repositories {
+    jcenter()
+    gradlePluginPortal()
+
+    maven {
+      url "https://sandec.jfrog.io/artifactory/repo"
+    }
+  }
+
+  dependencies {
+    classpath 'one.jpro:jpro-gradle-plugin:2023.1.0'
+  }
+}
+
+
+/**
+ ******************  Java Configuration ******************
+ */
+plugins {
+  id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+compileJava {
+  sourceCompatibility = 11
+  targetCompatibility = 11
+}
+
+repositories {
+  jcenter()
+}
+
+javafx {
+    version = '17.0.2'
+    modules = [ 'javafx.base', 'javafx.graphics', 'javafx.controls', 'javafx.fxml', 'javafx.media', 'javafx.web' ]
+}
+
+/**
+ ******************  JPro Configuration ******************
+ */
+apply plugin: 'jpro-gradle-plugin'
+
+
+/**
+ * App Main Class
+ */
+//mainClassName = 'one.jpro.hellojpro.HelloJPro'
+mainClassName = 'one.jpro.hellojpro.HelloJProFXML'
+
+application {
+  mainModule = moduleName
+}
+
+jpro {
+  JVMArgs << '-Xmx1000m'
+
+  // jpro server port
+  port = 8080
+}
