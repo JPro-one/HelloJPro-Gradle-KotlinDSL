@@ -1,6 +1,7 @@
-# HelloJPro
+# HelloJPro - Gradle with Kotlin DSL
 
-This project, is a hello-world for [jpro, which enables javafx in the web.](https://www.jpro.one/)
+This project, is a hello-world for [JPro](https://www.jpro.one/), which enables javafx in the web.
+The build configuration is done using Gradle with Kotlin DSL
 
 [Here you can see this program running.](https://demos.jpro.one/helloworld.html)
 
