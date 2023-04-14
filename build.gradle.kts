@@ -13,8 +13,8 @@ repositories {
 }
 
 javafx {
-    version = "17.0.2"
-    modules = listOf("javafx.base", "javafx.graphics", "javafx.controls", "javafx.fxml", "javafx.media", "javafx.web")
+    version = "17.0.6"
+    modules = listOf("javafx.graphics", "javafx.controls", "javafx.fxml", "javafx.media", "javafx.web")
 }
 
 application {
