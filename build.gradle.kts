@@ -1,5 +1,5 @@
 plugins {
-    id("org.openjfx.javafxplugin") version "0.0.13"
+    id("org.openjfx.javafxplugin") version "0.0.14"
     `jpro-gradle-plugin`
 }
 
@@ -13,7 +13,7 @@ repositories {
 }
 
 javafx {
-    version = "17.0.6"
+    version = "17.0.7"
     modules = listOf("javafx.graphics", "javafx.controls", "javafx.fxml", "javafx.media", "javafx.web")
 }
 
