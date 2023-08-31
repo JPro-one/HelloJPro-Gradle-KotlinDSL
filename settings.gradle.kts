@@ -12,4 +12,4 @@ buildscript {
     }
 }
 
-rootProject.name = "HelloJPro-Gradle-KotlinDSL"
+rootProject.name = "hellojpro-gradle-kotlindsl"
