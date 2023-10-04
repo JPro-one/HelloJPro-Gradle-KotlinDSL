@@ -7,8 +7,10 @@ buildscript {
         }
     }
 
+    val jproVersion: String by settings
+
     dependencies {
-        classpath("one.jpro:jpro-gradle-plugin:2023.2.2")
+        classpath("one.jpro:jpro-gradle-plugin:$jproVersion")
     }
 }
 
