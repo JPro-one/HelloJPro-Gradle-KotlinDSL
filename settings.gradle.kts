@@ -13,5 +13,3 @@ buildscript {
         classpath("one.jpro:jpro-gradle-plugin:$jproVersion")
     }
 }
-
-rootProject.name = "hellojpro-gradle-kotlindsl"
