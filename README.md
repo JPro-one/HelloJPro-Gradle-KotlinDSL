@@ -1,5 +1,7 @@
 # HelloJPro - Gradle with Kotlin DSL
 
+![CI Build](https://github.com/JPro-one/hellojpro-gradle-kotlindsl/actions/workflows/main.yml/badge.svg)
+
 This project, is a hello-world for [JPro](https://www.jpro.one/), which enables javafx in the web.
 The build configuration is done using Gradle with Kotlin DSL
 
