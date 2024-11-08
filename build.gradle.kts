@@ -5,6 +5,7 @@ plugins {
 
 val projectVersion: String by project
 val javafxVersion: String by project
+val jproVersion: String by project
 
 version = projectVersion
 group = "one.jpro"
@@ -16,6 +17,10 @@ java {
 
 repositories {
     mavenCentral()
+}
+
+dependencies {
+    implementation("one.jpro:jpro-webapi:$jproVersion")
 }
 
 javafx {
